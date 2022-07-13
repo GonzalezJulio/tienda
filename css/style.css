@@ -8,11 +8,12 @@ family=Merienda:wght@700& family=Fredericka+the+Great&display=swap);
 
     /*colors*/
 
-    --primary: #D0B2B5;
-    --secondary: #D4D5CE;
-    --terteary: #B2C0D5;
-    --alternative: #A4CFD3;
-    --text-color: #52b2cf;
+    --primary: #eba1eb;
+    --secondary: #f28ecf;
+    --terteary: #f6c6a1;
+    --quaternary: #f8efb0;
+    --alternative: #f7efe0;
+    --text-color: #20aed8;
 
 
     /*spacings*/
@@ -89,18 +90,95 @@ header {
     gap: var(--spacing-small);
 }
 
-.menu__link {
-    font-size: var(--text-medium);
-    padding: var(--spacing-xsmall);
-    border: 2px solid#fff;
-    transition: all 1s;
 
+
+/* animaciones */
+a:link {
+    color: var(--text-color);
 }
 
-.menu__link:hover {
-    border-color: var(--text-base);
+a:visited {
+    color: var(--text-color);
 }
 
+a:hover {
+    color: var(--quaternary);
+}
+
+a:active {
+    color: aliceblue;
+}
+
+
+/* animaciones imagenes */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/* animacion compras */
+.animation {
+    position: relative;
+    width: 100%;
+}
+
+.image_compra {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.animation:hover .image_compra {
+    opacity: 0.3;
+}
+
+.animation:hover .middle {
+    opacity: 1;
+}
+
+.text_compras {
+    background-color:var(--terteary);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
 
 /*Main*/
 
@@ -154,6 +232,7 @@ header {
     background-color: var(--alternative);
     max-width: 1000px;
     margin-top: 200px;
+    align-items: center;
 
 }
 
@@ -224,17 +303,19 @@ fieldset {
         gap: var(--spacing-xsmall);
     }
 }
+
 @media screen and (max-width: 660px) {
-    .compras{
+    .compras {
         grid-template-columns: repeat(2, 50%);
         ;
     }
-    
-    
+
+
 }
+
 @media screen and (max-width: 480px) {
-    
-    
+
+
     header {
         flex-direction: column;
         gap: 2rem;
@@ -244,22 +325,24 @@ fieldset {
         flex-direction: column;
         align-items: center;
     }
-    .gallery{
-        grid-template-columns:auto, 100%;
+
+    .gallery {
+        grid-template-columns: auto, 100%;
         grid-template-rows: auto;
-        
+
     }
 
-    .compras{
-        grid-template-columns:auto;
+    .compras {
+        grid-template-columns: auto;
 
-        
+
     }
 
-    .sugerencias{
+    .sugerencias {
         align-items: center;
     }
-    footer{
+
+    footer {
         flex-direction: column;
         align-items: center;
     }
