@@ -1,31 +1,25 @@
 /*font*/
 @import url(https://fonts.googleapis.com/css2?family=Signika&
 family=Merienda:wght@700& family=Fredericka+the+Great&display=swap);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 /*normalize*/
-
 :root {
-
     /*colors*/
-
     --primary: #eba1eb;
     --secondary: #f28ecf;
     --terteary: #f6c6a1;
     --quaternary: #f8efb0;
     --alternative: #f7efe0;
     --text-color: #20aed8;
-
-
     /*spacings*/
     --spacing-large: 6rem;
     --spacing-medium: 2.4rem;
     --spacing-small: 2rem;
     --spacing-xsmall: 1rem;
-
     /*font-family*/
     --font-principal: 'merienda', cursive;
     --font-title: 'Fredericka', cursive;
-
     /*font-sizes*/
     --text-large: 5.2em;
     --text-medium: 2.2em;
@@ -40,58 +34,26 @@ family=Merienda:wght@700& family=Fredericka+the+Great&display=swap);
     padding: 0;
     box-sizing: border-box;
 }
-
+img{
+    width: 100%;
+}
 hmtl {
     font-size: 62.5%;
 }
 
 body {
-    font-family: var(--font-principal);
-    background-color: var(--secondary);
-    color: var(--text-color);
-
-
-
+    background-color: antiquewhite;
 
 }
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    font-family: var(--font-title);
-    color: var(--text-color);
-}
-
-img {
-    width: 100%;
-}
-
-/*header*/
-
-header {
+.navbar{
     background-color: var(--primary);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: var(--spacing-small) 0;
-    border-bottom: 2px solid var(--secondary);
-
 }
-
-.header__img {
-    max-width: 120px;
+.navbar-toggle{
+    background-color: var(--primary);
 }
-
-.menu {
-    display: flex;
-    gap: var(--spacing-small);
+.offcanvas{
+    background-color: var(--terteary);
 }
-
-
-
 /* animaciones */
 a:link {
     color: var(--text-color);
@@ -108,15 +70,13 @@ a:hover {
 a:active {
     color: aliceblue;
 }
-
-
 /* animaciones imagenes */
 .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #eba1eb;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -138,8 +98,25 @@ a:active {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+.text__menu__nosotras {
 
+    text-align: center;
+    font-family: var(--font-title);
+    color: black;
 
+}
+.container {
+
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: var(--spacing-small);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-small);
+}
 /* animacion compras */
 .animation {
     position: relative;
@@ -207,9 +184,15 @@ a:active {
 
 /* gallery */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    height: 1fr;
+    display:flex;
+    flex-direction: block;
+    
     gap: var(--spacing-small);
+}
+.gallery img{
+    height: auto;
 }
 
 /* Productos */
@@ -227,123 +210,50 @@ a:active {
     height: 447px;
 }
 
-/* Compras */
-#compras {
-    background-color: var(--alternative);
-    max-width: 1000px;
-    margin-top: 200px;
-    align-items: center;
-
-}
-
-.compras__text {
-    font-family: var(--font-title);
-    color: var(--text-color);
-
-}
-
-.compras {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: var(--spacing-small);
-    padding: 20px;
-    max-width: 1000px;
-    margin-top: 200px;
-    grid-auto-flow: dense;
-}
 
 /* Sugerencias */
 .sugerencias {
 
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    background-color: var(--quaternary);
 }
-
-
-/* footer */
-
-footer {
-    background-color: var(--terteary);
+/*Compras*/
+.compras__boos{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-
+    
+}
+.btn{
+background-color:var(--secondary);
 }
 
-.redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img__inst {
-    width: 50px;
-    padding: 4px;
-}
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 2px groove (internal value);
+.footer {
+    background-color:#f28ecf;
 }
 
 
-
-@media screen and (max-width: 1200px) {
-    .gallery {
-        gap: var(--spacing-xsmall);
-    }
-}
-
-@media screen and (max-width: 660px) {
-    .compras {
-        grid-template-columns: repeat(2, 50%);
-        ;
+@media screen and (max-width: 1000px){
+    .compras__boos{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(1, 1fr);
+        gap: var(--spacing-small);
     }
 
-
 }
-
-@media screen and (max-width: 480px) {
-
-
-    header {
+@media screen and (max-width: 780px){
+    .gallery{
+        display: flex;
         flex-direction: column;
-        gap: 2rem;
     }
+}
 
-    .menu {
+@media screen and (max-width: 720px){
+    .compras__boos{
+        display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .gallery {
-        grid-template-columns: auto, 100%;
-        grid-template-rows: auto;
 
     }
-
-    .compras {
-        grid-template-columns: auto;
-
-
-    }
-
-    .sugerencias {
-        align-items: center;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
+    
 }
+    
