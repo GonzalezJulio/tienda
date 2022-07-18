@@ -174,7 +174,7 @@ a:active {
 }
 
 .text_compras {
-    background-color:var(--terteary);
+    background-color: var(--terteary);
     color: white;
     font-size: 16px;
     padding: 16px 32px;

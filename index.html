@@ -6,48 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Las Gonzalez</title>
-    
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Css externo-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  
-    <!--Css propio-->
-    <link rel="stylesheet" href="./css/style.css">
-
-
+        <!--Css Propio-->
+    <link rel="stylesheet" href="./Css/Style.css">
 </head>
 
 <body>
-    <!--incio header-->
-    <header class="flex">
-        <picture class="header__logo">
-            <a href="../index.html"><img class="header__img" src="../assest/img/Logo.jpeg" alt="Logo"></a>
-        </picture>
-        <nav class="navigation">
-            <ul class="menu">
-                <li class="menu__item animate__animated animate__rubberBand">
-                    <a href="../view/nosotras.html">Nosotras</a>
-                </li>
-                <li class="menu__item animate__animated animate__rubberBand">
-                    <a href="../view/productos.html">Productos</a>
-                </li>
-                <li class="menu__item animate__animated animate__rubberBand">
-                    <a href="../view/contactos.html">Contactos</a>
-                </li>
-                <li class="menu__item animate__animated animate__rubberBand">
-                    <a href="../view/compras.html">Compras</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--fin header-->
-    <!--productos-->
-    <main class="container">
-        <div class="text__menu">
+    <!--Inicio Header-->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./assest/img/Logo.jpeg" alt="Logo" wight="70 px" height="70 px"></a>
+            <button class="navbar-toggle r" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Las Gonzalez Tienda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./view/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./view/nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./view/contacto.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./view/compras.html">Compras</a>
+                        </li>
 
-            <h2>Nuestros Productos</h2>
-            <p>Hola somos Clau y Lau, somos Hermanas y traemos estos productos con "Con Alma"</p>
+                    </ul>
 
+                </div>
+            </div>
         </div>
+    </nav>
+    <!--Fin Header-->
+    <!--Inicio Carusel-->
+    <main class="container">
+        
         <section id="gallery" class="gallery">
 
 
@@ -66,7 +73,7 @@
                     </div>
             </picture>
             <picture class="gallery__img animate__animated animate__swing">
-                <a href="./view/productos.html"><img src="./assest/img/varios3.JPG" alt="varios"></a>
+                <a href="./view/productos.html"><img src="./assest/img/botellas_vasos8.jpeg" alt="varios"></a>
                 <div class="overlay">
                     <a href="./view/productos.html"><div class="text">Mates</div></a>
                     </div>
@@ -74,41 +81,117 @@
 
         </section>
     </main>
+    <!--Fin Carusel-->
 
 
 
-    <footer>
-        <div>
-            <a href="./index.html">Ir al Incio</a>
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span> Conoces nuestras redes sociales</span>
+            </div>
+            <!-- Left -->
 
-            <h2>Seguinos en Nuestras Redes</h2>
-            <Ul class="redes">
-                <li><a href="https://www.instagram.com/lasgonzalez.tienda/"><img src="./assest/img/instagram.png"
-                            alt="Instagram" class="img__inst"></a></li>
-                <li>Instagram</li>
-                <li><a href="https://wa.me/c/5493543640417"><img src="./assest/img/whatsapp.png" alt="whatsapp"
-                            class="img__inst"></a></li>
-                <li>Catalogo whatsapp</li>
-            </Ul>
-        </div>
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://wa.me/c/5493543640417" class="me-4 text-reset">
+                    <i class="bi bi-whatsapp"></i>
+                
+                </a>
+                <a href="https://www.instagram.com/lasgonzalez.tienda/"" class="me-4 text-reset">
+                    <i class="bi bi-instagram"></i>
+                    
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/GonzalezJulio/Tienda_LasGonzalez" class="me-4 text-reset">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="footer">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Las Gonzalez
+                        </h6>
+                        <p>
+                            Hola somos Clau y Lau, somos Hermanas y traemos estos productos con "Con Alma"
+                        </p>
+                    </div>
+                    <!-- Grid column -->
 
 
-        <fieldset>
-            <legend>Newsletter</legend>
 
-            <input type="Nombre" id="Nombre" placeholder="Nombre">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contactos utiles
+                        </h6>
+                        <p>
+                            <a href="./view/nosotras.html" class="text-reset">Nosotas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ayuda</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ordenes</a>
+                        </p>
 
-            <input type="email" id="Email" placeholder="Email">
+                    </div>
+                    <!-- Grid column -->
 
-            <input type="submit">
-        </fieldset>
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Saldan, CP 5149, Argentina</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            tienda.lasgonzalez@gmial.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +54 93 54 36 40 417</p>
 
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
 
-
+        <!-- Copyright -->
 
     </footer>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Footer -->
+
+
+
+    <!--Boostrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

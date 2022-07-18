@@ -6,88 +6,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotras</title>
-     <!--Css externo-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-     <!--Css Propio-->
-    <link rel="stylesheet" href="../css/style.css">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Css externo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Css Propio-->
+    <link rel="stylesheet" href="../Css/Style.css">
 </head>
 
 <body>
-    <!--incio header-->
-    <header class="flex">
-        <picture class="header__logo">
-            <a href="../index.html"><img class="header__img" src="../assest/img/Logo.jpeg" alt="Logo"></a>
-        </picture>
-        <nav class="navigation">
-            <ul class="menu">
-                <li class="menu__item animate__animated animate__rubberBand">
-                    <a href="../view/nosotras.html">Nosotras</a>
-                </li>
-                <li class="menu__item animate__animated animate__rubberBand">
-                    <a href="../view/productos.html">Productos</a>
-                </li>
-                <li class="menu__item animate__animated animate__rubberBand">
-                    <a href="../view/contactos.html">Contactos</a>
-                </li>
-                <li class="menu__item animate__animated animate__rubberBand">
-                    <a href="../view/compras.html">Compras</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--fin header-->
+    <!--Inicio Header-->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assest/img/Logo.jpeg" alt="Logo" wight="100px"
+                    height="100px"></a>
+            <button class="navbar-toggle r" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Las Gonzalez Tienda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./compras.html">Compras</a>
+                        </li>
 
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Fin Header-->
     <!-- Inicio Nosotras-->
 
-    <main class="container">
-        <section class="text__menu__nosotras">
-            <h3>LAS GONZALEZ</h3>
-            <p>Las Gonzalez es un emprendimiento que nace en 2021, inicialmente comenzamos con artículos innovadores.
-                Con el
-                pasar del tiempo se fueron incorporando diferentes artículos como mates, termos, mantas, accesorios y
-                más.
-                Trabajamos con el objetivo de consentir a la mujer moderna.
-                Gracias a nuestras familias por el apoyo que nos brindan día a día para seguir con este sueño.
-            </p>
-        </section>
-    </main>
+
+    <section class="text-center text-lg-start text-muted">
+        <p class="fw-bold text-center text-lg-start text-muted">LAS GONZALEZ</p>
+        <p class="fw-semibold text-center text-lg-start text-muted">Las Gonzalez es un emprendimiento que nace en 2021, inicialmente comenzamos
+            con artículos innovadores.
+            Con el
+            pasar del tiempo se fueron incorporando diferentes artículos como mates, termos, mantas, accesorios y
+            más.
+            Trabajamos con el objetivo de consentir a la mujer moderna.
+            Gracias a nuestras familias por el apoyo que nos brindan día a día para seguir con este sueño.
+        </p>
+    </section>
+
     <!-- Fin Nosotras-->
 
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span> Conoces nuestras redes sociales</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://wa.me/c/5493543640417" class="me-4 text-reset">
+                    <i class="bi bi-whatsapp"></i>
+
+                </a>
+                <a href="https://www.instagram.com/lasgonzalez.tienda/"" class=" me-4 text-reset">
+                    <i class="bi bi-instagram"></i>
+
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/GonzalezJulio/Tienda_LasGonzalez" class="me-4 text-reset">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="footer">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Las Gonzalez
+                        </h6>
+                        <p>
+                            Hola somos Clau y Lau, somos Hermanas y traemos estos productos con "Con Alma"
+                        </p>
+                    </div>
+                    <!-- Grid column -->
 
 
 
-    <!--Inicio Footer-->
-    <footer>
-        <div>
-            <a href="../index.html">Ir al Incio</a>
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contactos utiles
+                        </h6>
+                        <p>
+                            <a href="./view/nosotras.html" class="text-reset">Nosotas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ayuda</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ordenes</a>
+                        </p>
 
-            <h2>Seguinos en Nuestras Redes</h2>
-            <Ul class="redes">
-                <li><a href="https://www.instagram.com/lasgonzalez.tienda/"><img src="../assest/img/instagram.png"
-                            alt="Instagram" class="img__inst"></a></li>
-                <li>Instagram</li>
-                <li><a href="https://wa.me/c/5493543640417"><img src="../assest/img/Whatsapp.png" alt="whatsapp"
-                            class="img__inst"></a></li>
-                <li>Catalogo whatsapp</li>
-            </Ul>
-        </div>
+                    </div>
+                    <!-- Grid column -->
 
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Saldan, CP 5149, Argentina</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            tienda.lasgonzalez@gmial.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +54 93 54 36 40 417</p>
 
-        <fieldset>
-            <legend>Newsletter</legend>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
 
-            <input type="Nombre" id="Nombre" placeholder="Nombre">
-
-            <input type="email" id="Email" placeholder="Email">
-
-            <input type="submit">
-        </fieldset>
-
-
-
+        <!-- Copyright -->
 
     </footer>
-    <!--Fin de Footer-->
+    <!-- Footer -->
+
+    <!--Boostrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
