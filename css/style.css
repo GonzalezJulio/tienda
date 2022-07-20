@@ -98,13 +98,7 @@ a:active {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-.text__menu__nosotras {
 
-    text-align: center;
-    font-family: var(--font-title);
-    color: black;
-
-}
 .container {
 
     max-width: 1200px;
@@ -113,8 +107,8 @@ a:active {
     margin-top: var(--spacing-small);
 }
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: row;
     gap: var(--spacing-small);
 }
 /* animacion compras */
@@ -166,35 +160,6 @@ a:active {
     margin: 0 auto;
     margin-top: var(--spacing-small);
 }
-
-.text__menu {
-    text-align: center;
-    font-family: var(--font-title);
-    color: var(--text-color);
-
-}
-
-.text__menu__nosotras {
-
-    text-align: center;
-    font-family: var(--font-title);
-    color: var(--text-color);
-
-}
-
-/* gallery */
-.gallery {
-    width: 100%;
-    height: 1fr;
-    display:flex;
-    flex-direction: block;
-    
-    gap: var(--spacing-small);
-}
-.gallery img{
-    height: auto;
-}
-
 /* Productos */
 .gallery__pro {
 
