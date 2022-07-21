@@ -34,9 +34,11 @@ family=Merienda:wght@700& family=Fredericka+the+Great&display=swap);
     padding: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     width: 100%;
 }
+
 hmtl {
     font-size: 62.5%;
 }
@@ -45,15 +47,27 @@ body {
     background-color: antiquewhite;
 
 }
-.navbar{
+
+.navbar {
     background-color: var(--primary);
 }
-.navbar-toggle{
+
+.navbar-toggle {
     background-color: var(--primary);
 }
-.offcanvas{
+
+.flex-text{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.offcanvas {
     background-color: var(--terteary);
 }
+
 /* animaciones */
 a:link {
     color: var(--text-color);
@@ -70,6 +84,7 @@ a:hover {
 a:active {
     color: aliceblue;
 }
+
 /* animaciones imagenes */
 .overlay {
     position: absolute;
@@ -106,11 +121,13 @@ a:active {
     margin: 0 auto;
     margin-top: var(--spacing-small);
 }
+
 .gallery {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-small);
 }
+
 /* animacion compras */
 .animation {
     position: relative;
@@ -160,6 +177,7 @@ a:active {
     margin: 0 auto;
     margin-top: var(--spacing-small);
 }
+
 /* Productos */
 .gallery__pro {
 
@@ -177,59 +195,68 @@ a:active {
 
 
 /* Sugerencias */
-.sugerencias {
+.sugerencia {
+    display: flex;
+    flex-direction: column;
+ }
+ .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
 
-    background-color: var(--quaternary);
-}
 /*Compras*/
-.compras__boos{
+.compras__boos {
     display: flex;
     justify-content: space-around;
-    
+
 }
-.btn{
-background-color:var(--secondary);
+
+.btn {
+    background-color: var(--secondary);
 }
 
 .footer {
-    background-color:#f28ecf;
+    background-color: #f28ecf;
 }
 
 
-@media screen and (max-width: 1000px){
-    .compras__boos{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows:repeat(1, 1fr);
+@media screen and (max-width: 1000px) {
+    .compras__boos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         gap: var(--spacing-small);
     }
 
 }
-@media screen and (max-width: 780px){
-    .gallery{
+
+@media screen and (max-width: 780px) {
+    .gallery {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 720px){
-    .logo__img{
+@media screen and (max-width: 720px) {
+    .logo__img {
         width: 50px;
         height: 50px;
     }
-    .compras__boos{
+
+    .compras__boos {
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
-    
+
 }
-    
+
 @media screen and (max-width:480px) {
-    .logo__img{
+    .logo__img {
         width: 30px;
         height: 30px;
     }
-    
+
 }
