@@ -198,6 +198,7 @@ a:active {
 .sugerencia {
     display: flex;
     flex-direction: column;
+    background-color: #f7efe0;
  }
  .formulario{
     display: flex;
