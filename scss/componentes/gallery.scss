@@ -1,0 +1,35 @@
+/* animaciones imagenes */
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-small;
+
+    &__pro {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-auto-rows: minmax(200px, auto);
+        gap: $spacing-small;
+        padding: 20px;
+        grid-auto-flow: dense;
+        &__pro img {
+            height: 447px;
+        }
+        
+    }
+    
+    
+
+}
+
+
+.container {
+
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: $spacing-small;
+}
+
+
+
