@@ -9,97 +9,176 @@
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Css Iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!--Css externo-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!--Css Propio-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Css Propio-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!--Inicio Header-->
-    <nav class="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img src="./assest/img/Logo.jpeg" alt="Logo" class="logo__img" wight="70 px" height="70 px"></a>
-            <button class="navbar-toggle r" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Las Gonzalez Tienda</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+    <div>
+        <div class="redessociales">
+            <a href="https://wa.me/c/5493543640417"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/lasgonzalez.tienda/"><i class="bi bi-instagram"></i></a>
+            <section class="nav justify-content-center ">
+                <p>ENVIO GRATUITO A TODO EL PAIS DESDE $7000 </p>
+            </section>
+        </div>
+        <div class="Logo">
+            <div class="container-fluid">
+
+                <a href="./index.html"><img src="./assest/img/lasgonzalez_tienda.png" alt="logo"></a>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        </li>
+                        <a class="navbar-brand" href="./view/nosotras.html">Notrosas</a>
+                        <li>
+
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./view/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./view/nosotras.html">Nosotras</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="./view/contactos.html">Contactos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./view/compras.html">Compras</a>
-                        </li>
+
+                        <form class="d-flex " role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+                            <button class="btn" type="submit">Buscador</button>
+                        </form>
+
 
                     </ul>
 
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!--Fin Header-->
     <!--Inicio Carusel-->
+
     <main class="container">
         <section class="text-center text-lg-start text-muted">
             <p class="fw-bold text-center text-lg-start text-muted">Las Gonzalez</p>
-            <p class="fw-semibold text-center text-lg-start text-muted">Hola Somos Las Gonzalez, somos Hermanas y emprendedoras, esta nuestra pagina y traemos Articulos con Alma </p>
+            <p class="fw-semibold text-center text-lg-start text-muted">Hola Somos Las Gonzalez, somos Hermanas y
+                emprendedoras, esta nuestra pagina y traemos Articulos con Alma </p>
         </section>
-        
-        <section id="gallery" class="gallery">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assest/img/card_botellas.jpg" class="card-img-top" alt="botella">
+                    <div class="card-body">
+                        <h5 class="card-title">Botella</h5>
+                        <p class="card-text">Botellas termicas, frio o caliente. Excelente para todo uso.</p>
+                    </div>
 
-
-            <picture class="gallery__img animate__animated animate__swing">
-                <a href="./view/productos.html"><img src="./assest/img/botellas_vasos6.jpeg" alt="botella"></a>
-                <div class="overlay">
-                <a href="./view/productos.html"><div class="text">Botellas</div></a>
                 </div>
-            
-            </picture>
-
-            <picture class="gallery__img animate__animated animate__swing">
-                <img src="./assest/img/botellas_vasos.JPG" alt="vasos"></a>
-                <div class="overlay">
-                    <a href="./view/productos.html"><div class="text">Vasos</div></a>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assest/img/card_setmatero.jpg" class="card-img-top" alt="mate">
+                    <div class="card-body">
+                        <h5 class="card-title">Set Matero</h5>
+                        <p class="card-text">Set Materos, con mucha onda.</p>
                     </div>
-            </picture>
-            <picture class="gallery__img animate__animated animate__swing">
-                <a href="./view/productos.html"><img src="./assest/img/botellas_vasos8.jpeg" alt="varios"></a>
-                <div class="overlay">
-                    <a href="./view/productos.html"><div class="text">Vasos</div></a>
-                    </div>
-            </picture>
 
-        </section>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assest/img/card_vasos.jpg" class="card-img-top" alt="vaso">
+                    <div class="card-body">
+                        <h5 class="card-title">Vasos</h5>
+                        <p class="card-text">Vasos termicos, impresindible, para todo el año.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <!--Fin Carusel-->
+    <!--Inico Instagram-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" style="width: 100%;">
+                <a href="https://www.instagram.com/lasgonzalez.tienda/">
+                    <h5 class="card-title ">lasgonzalez.tienda</h5>
+                </a>
+                <h6 class="card-subtitle mb-2 text-muted">Seguinos en Instagram</h6>
+            </div>
 
+        </div>
+
+    </div>
+
+
+    <!--Fin Instagram-->
+    <!--Envios Pagos-->
+    
+        <div class="Pagos">
+            <div class="row ma-4">
+                <div class="col-md-4">
+                    <h4 class="">Medios de Pago</h4>
+                </div>
+                <div class="col-md-8">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                        data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                        class="icon-logo" alt="visa">
+                    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                        data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                        class="icon-logo" alt="mastercard">
+                    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                        data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                        class="icon-logo" alt="amex">
+                    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
+                        data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
+                        class="icon-logo" alt="ar_banelco">
+                    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
+                        data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
+                        class="icon-logo" alt="ar_tarjeta-naranja">
+                    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                        data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                        class="icon-logo" alt="mercadopago">
+                    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
+                        data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
+                        class="icon-logo" alt="pagofacil">
+                    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
+                        data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
+                        class="icon-logo" alt="rapipago">
+
+                </div>
+
+            </div>
+        </div>
+
+    
+    <!--fin Envios Pagos-->
 
 
     <!-- Footer -->
     <footer class="footer text-center text-lg-start text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
+
             <div class="me-5 d-none d-lg-block">
                 <span> Conoces nuestras redes sociales</span>
             </div>
-            <!-- Left -->
 
-            <!-- Right -->
             <div>
                 <a href="" class="me-4 text-reset">
                     <i class="bi bi-facebook-f"></i>
@@ -109,11 +188,11 @@
                 </a>
                 <a href="https://wa.me/c/5493543640417" class="me-4 text-reset">
                     <i class="bi bi-whatsapp"></i>
-                
+
                 </a>
-                <a href="https://www.instagram.com/lasgonzalez.tienda/"" class="me-4 text-reset">
+                <a href="https://www.instagram.com/lasgonzalez.tienda/" class=" me-4 text-reset">
                     <i class="bi bi-instagram"></i>
-                    
+
                 </a>
                 <a href="" class="me-4 text-reset">
                     <i class="bi bi-linkedin"></i>
@@ -122,32 +201,20 @@
                     <i class="bi bi-github"></i>
                 </a>
             </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
 
-        <!-- Section: Links  -->
+        </section>
         <section class="footer">
             <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
                 <div class="row mt-3">
-                    <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
+                        <h1 class="text-uppercase fw-bold mb-4">
                             <i class="fas fa-gem me-3"></i>Las Gonzalez
-                        </h6>
+                        </h1>
                         <p>
                             Hola somos Clau y Lau, somos Hermanas y traemos estos productos con "Con Alma"
                         </p>
                     </div>
-                    <!-- Grid column -->
-
-
-
-                    <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
                             Contactos utiles
                         </h6>
@@ -162,11 +229,8 @@
                         </p>
 
                     </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
+
                         <h6 class="text-uppercase fw-bold mb-4">
                             Contact
                         </h6>
@@ -178,14 +242,11 @@
                         <p><i class="fas fa-phone me-3"></i> +54 93 54 36 40 417</p>
 
                     </div>
-                    <!-- Grid column -->
+
                 </div>
-                <!-- Grid row -->
+
             </div>
         </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
 
     </footer>
     <!-- Footer -->
